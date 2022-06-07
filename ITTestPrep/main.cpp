@@ -7,7 +7,7 @@
 #include "classes.h"
 
 
-void execForachNArray() 
+void execForachNArray()
 {
 	std::cout << returnFirstArrayAsString() << '\n';
 	std::cout << returnSecondArrayAsString() << '\n';
@@ -19,29 +19,43 @@ void execForachNArray()
 }
 
 //Dynamic memory alloc
-void memoryAlloc() 
+void memoryAlloc()
 {
 	int* arrayX = new int[5];
 
 	delete[] arrayX;
 }
 
-void saveAndRead() 
+void saveAndRead()
 {
 	std::array<int, 6> uselessArrayAleZIntami = { 2,1,3,7,6,9 };
 	saveToFile(uselessArrayAleZIntami, "inty");
 	std::cout << readFromFile("inty") << '\n';
-	
+
 	std::array<char, 6> uselessArray = { 'B','O','O','M','E','R' };
 	saveToFile(uselessArray, "chary");
 	std::cout << readFromFile("chary") << '\n';
 }
 
+void classesAreCool()
+{
+	CSVConverter csvConverter;
+	JSONConverter jsonConverter;
+	Saver saver;
+	//csvConverter.printConvName();
+	//jsonConverter.printConvName();
+
+	//cout << csvConverter.getInt() << '\n';
+
+	saver.Save(jsonConverter);
+}
+
+
 int main()
 {
-	execForachNArray();
+	//execForachNArray();
 
-	saveAndRead();
+	//saveAndRead();
 
-
+	classesAreCool();
 }

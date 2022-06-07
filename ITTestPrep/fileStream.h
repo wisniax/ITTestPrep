@@ -21,7 +21,7 @@ void appendToFile(const std::array<T, size>& x, std::string fileName)
 {
 	std::fstream file;
 	std::string information = "myInfo";
-	file.open(fileName + ".txt", std::ios::out | std::ios:app); //std::ios::out|std::ios:app to append
+	file.open(fileName + ".txt", std::ios::out | std::ios::app); //std::ios::out|std::ios:app to append
 	for (auto& y : x)
 	{
 		file << y << '\n';

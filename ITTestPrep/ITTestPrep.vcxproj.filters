@@ -21,6 +21,9 @@
     <ClCompile Include="foreachNarray.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="classes.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="foreachNarray.h">
