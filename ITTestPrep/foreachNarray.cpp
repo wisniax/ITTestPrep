@@ -1,4 +1,5 @@
 #include "foreachNarray.h"
+#include <string>
 
 std::array<char, 5> myCharArray = { 'B', '<', 'u', '=', 'o' };
 std::array<std::array<char, 5>, 5> mySecondCharArray =
